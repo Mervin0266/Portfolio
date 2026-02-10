@@ -25,7 +25,7 @@ const ProfileCard = () => {
             </Avatar>
 
             {/* NAME  */}
-            <div className="flex flex-col gap-[2px]">
+            <div className="flex flex-col gap-0.5">
               <h1 className="text-lg">{config.developer.name}</h1>
               <p className="text-sm text-text-muted">{config.developer.title}</p>
             </div>
@@ -51,15 +51,15 @@ const ProfileCard = () => {
         />
 
         <ContactCard
-          title="Email"
-          href={`mailto:${config.social.email}`}
-          icon={<HiMail className="w-4 h-4" />}
+            title="Email"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mervin0266@gmail.com"
+            icon={<HiMail className="w-4 h-4" />}
         />
 
         <ContactCard
-          title="Contact me"
-          href={`mailto:${config.social.email}`}
-          className="bg-primary text-white dark:text-black hover:bg-primary"
+            title="Contact me"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mervin0266@gmail.com&su=Contact%20from%20Portfolio"
+            className="bg-primary text-white dark:text-black hover:bg-primary"
         />
       </div>
     </div>

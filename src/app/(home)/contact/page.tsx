@@ -1,6 +1,6 @@
 import { config } from "@/config";
 import ContactCard from "@/components/contact-card";
-import { FaGithub } from "react-icons/fa";
+import { FaFilePdf, FaGithub } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { FaMapPin } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
@@ -29,7 +29,7 @@ const ContactPage = () => {
 
           <ContactCard
             title="Email"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=dev.huzaif@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mervin0266@gmail.com"
             icon={<HiMail className="w-4 h-4" />}
           />
 
@@ -42,9 +42,10 @@ const ContactPage = () => {
           </div>
 
           <ContactCard
-            title="Contact me"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=dev.huzaif@gmail.com&su=Contact%20from%20Portfolio"
+            title="Resume"
+            href="/resume/Mervin_A_Resume.pdf"
             className="bg-primary text-white dark:text-black hover:bg-primary"
+            icon={<FaFilePdf className="w-4 h-4" />}
           />
         </div>
 
@@ -56,7 +57,7 @@ const ContactPage = () => {
             hearing about new opportunities.
           </p>
           <a 
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=dev.huzaif@gmail.com&su=Contact%20from%20Portfolio"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mervin0266@gmail.com&su=Contact%20from%20Portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -65,7 +66,7 @@ const ContactPage = () => {
               className="bg-primary text-white dark:text-black hover:opacity-90 transition-opacity"
             >
               <HiMail className="w-5 h-5 mr-2" />
-              Contact Me
+              Contact me
             </Button>
           </a>
         </div>

@@ -13,9 +13,9 @@ const Footer = () => {
         </Avatar>
 
         {/* NAME  */}
-        <div className="flex flex-col items-center lg:items-start gap-[2px]">
-          <h1 className="text-2xl">Huzaif Ahmed</h1>
-          <p className="text-sm opacity-60">Full Stack Developer</p>
+        <div className="flex flex-col items-center lg:items-start gap-0.5">
+          <h1 className="text-2xl">Mervin</h1>
+          <p className="text-sm opacity-60">2nd Year Student</p>
         </div>
       </div>
       <div className="grid lg:w-full grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-14">
@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
 
       {/* Attribution */}
-      <div className="text-xs md:text-sm text-center md:text-left">
+      {/* <div className="text-xs md:text-sm text-center md:text-left">
         <p>
           <span className="opacity-60">© Design by </span>
           <a
@@ -53,7 +53,7 @@ const Footer = () => {
             Huzaif Ahmed
           </a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

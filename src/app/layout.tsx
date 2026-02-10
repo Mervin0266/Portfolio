@@ -17,9 +17,9 @@ const readexPro = Readex_Pro({
 export const metadata: Metadata = {
   title: {
     template: "%s - Developer Portfolio",
-    default: "Huzaif - Full Stack Developer",
+    default: "Mervin A - Student",
   },
-  description: "Full-stack developer creating digital experiences that respect humans and scale with clarity.",
+  description: "Building intelligent software with a focus on structure and scalability.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${readexPro.className} antialiased`}>
+      <body className={`${readexPro.className} antialiased`} suppressHydrationWarning>
         <NuqsAdapter>
           <ThemeProvider attribute="class">
             <Toaster />

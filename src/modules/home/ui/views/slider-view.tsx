@@ -1,7 +1,7 @@
 "use client";
 
 import Carousel from "@/components/photo-carousel";
-import BlurImage from "@/components/blur-image";
+// import BlurImage from "@/components/blur-image";
 import { Skeleton } from "@/components/ui/skeleton";
 import { config } from "@/config";
 import Image from "next/image";

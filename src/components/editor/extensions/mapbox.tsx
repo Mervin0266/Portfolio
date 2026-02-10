@@ -457,7 +457,7 @@ function TiptapMapbox(props: NodeViewProps) {
               >
                 <AlignRight className="size-4" />
               </Button>
-              <Separator orientation="vertical" className="h-[20px]" />
+              <Separator orientation="vertical" className="h-5" />
               <DropdownMenu
                 open={openedMore}
                 onOpenChange={(val) => {

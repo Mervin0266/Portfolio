@@ -18,7 +18,7 @@ const ProjectsPage = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {config.projects.map((project) => (
+          {config.projects.map((project, index) => (
             <div
               key={project.id}
               className="group relative overflow-hidden rounded-xl bg-muted hover:bg-muted-foreground/10 transition-all duration-300"
@@ -28,6 +28,8 @@ const ProjectsPage = () => {
                   src={project.image}
                   alt={project.title}
                   fill
+                  priority={index === 0}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

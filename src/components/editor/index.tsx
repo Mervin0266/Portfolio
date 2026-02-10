@@ -1,6 +1,5 @@
 "use client";
 
-import "./editor.css";
 import { useMemo } from "react";
 import { Separator } from "@/components/ui/separator";
 import { Color } from "@tiptap/extension-color";

@@ -43,7 +43,7 @@ const AboutPage = () => {
 
           <ContactCard
             title="Email"
-            href={`mailto:${config.social.email}`}
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=mervin0266@gmail.com"
             icon={<HiMail className="w-4 h-4" />}
           />
 
@@ -59,14 +59,26 @@ const AboutPage = () => {
         <div className="bg-muted rounded-xl p-8">
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            I&apos;m a passionate full-stack developer who loves building
-            digital experiences that make a difference. My approach combines
-            clean code, thoughtful design, and user-centered thinking.
+            I&apos;m a Computer Science Engineering (AI & ML) student with a strong 
+            interest in software development and problem-solving.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            When I&apos;m not coding, I enjoy exploring new technologies,
-            contributing to open-source projects, and sharing knowledge with the
-            developer community.
+            I enjoy building applications that address real-world challenges, 
+            focusing on clear logic, clean structure, and usability. Through hackathons 
+            and academic projects, I&apos;ve gained hands-on experience designing and 
+            developing software systems, working with modern tools and frameworks, 
+            and collaborating effectively in team-based environments under tight deadlines.
+          </p>
+          <br />
+          <p className="text-muted-foreground leading-relaxed">
+            I&apos;m continuously learning new technologies and strengthening my understanding 
+            of data structures, algorithms, and core computer science concepts. I enjoy 
+            participating in technical competitions and project-based learning, as they 
+            push me to think critically and turn ideas into working solutions.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            My goal is to grow as a software engineer by building reliable, 
+            impactful software and contributing meaningfully to innovative projects.
           </p>
         </div>
       </div>

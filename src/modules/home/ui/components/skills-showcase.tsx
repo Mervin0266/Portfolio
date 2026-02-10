@@ -15,6 +15,9 @@ import {
   SiAmazon,
   SiDocker,
   SiFramer,
+  SiPython,
+  SiPostgresql,
+  SiC,
 } from "react-icons/si";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -30,6 +33,9 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   aws: SiAmazon,
   docker: SiDocker,
   framer: SiFramer,
+  python: SiPython,
+  postgresql: SiPostgresql,
+  c: SiC,
 };
 
 export const SkillsShowcase = () => {
