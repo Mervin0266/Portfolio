@@ -6,10 +6,11 @@ const s3Hostname = s3Url ? s3Url.hostname : "";
 const s3Protocol = s3Url ? s3Url.protocol.replace(":", "") : "https";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  output: "export",
   /* config options here */
   reactCompiler: true,
   images: {
+    unoptimized: true,
     qualities: [65, 75],
     remotePatterns: [
       ...(s3Hostname
