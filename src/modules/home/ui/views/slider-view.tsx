@@ -29,7 +29,7 @@ export const SliderView = () => {
         return (
           <div key={project.id} className="flex-[0_0_100%] h-full relative group">
             <Image
-              src={project.image}
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.image}`}
               alt={project.title}
               fill
               sizes="75vw"

@@ -6,6 +6,10 @@ const s3Hostname = s3Url ? s3Url.hostname : "";
 const s3Protocol = s3Url ? s3Url.protocol.replace(":", "") : "https";
 
 const nextConfig: NextConfig = {
+  basePath: "/Portfolio",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: "/Portfolio",
+  },
   output: "export",
   /* config options here */
   reactCompiler: true,

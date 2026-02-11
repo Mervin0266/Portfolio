@@ -1,6 +1,7 @@
 {
   "name": "photography-website",
   "version": "2.1.0",
+  "homepage": "https://Mervin0266.github.io/Portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",

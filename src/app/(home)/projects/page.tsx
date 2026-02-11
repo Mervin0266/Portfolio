@@ -25,7 +25,7 @@ const ProjectsPage = () => {
             >
               <div className="relative aspect-video overflow-hidden">
                 <Image
-                  src={project.image}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.image}`}
                   alt={project.title}
                   fill
                   priority={index === 0}
