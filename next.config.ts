@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_BASE_PATH: "/Portfolio",
   },
   output: "export",
+  trailingSlash: true,
   /* config options here */
   reactCompiler: true,
   images: {

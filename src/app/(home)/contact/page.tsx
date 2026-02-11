@@ -43,7 +43,7 @@ const ContactPage = () => {
 
           <ContactCard
             title="Resume"
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume/Mervin_A_Resume.pdf`}
+            href="/resume/Mervin_A_Resume.pdf"
             className="bg-primary text-white dark:text-black hover:bg-primary"
             icon={<FaFilePdf className="w-4 h-4" />}
           />
