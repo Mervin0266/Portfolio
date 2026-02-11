@@ -2,6 +2,7 @@ import { config } from "@/config";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { getAssetPath } from "@/lib/utils";
 
 export const metadata = {
   title: "Projects",
@@ -25,7 +26,7 @@ const ProjectsPage = () => {
             >
               <div className="relative aspect-video overflow-hidden">
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.image}`}
+                  src={getAssetPath(project.image)}
                   alt={project.title}
                   fill
                   priority={index === 0}

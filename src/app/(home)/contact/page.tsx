@@ -4,6 +4,7 @@ import { FaFilePdf, FaGithub } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { FaMapPin } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { getAssetPath } from "@/lib/utils";
 
 export const metadata = {
   title: "Contact",
@@ -43,7 +44,7 @@ const ContactPage = () => {
 
           <ContactCard
             title="Resume"
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume/Mervin_A_Resume.pdf`}
+            href={getAssetPath("/resume/Mervin_A_Resume.pdf")}
             className="bg-primary text-white dark:text-black hover:bg-primary"
             icon={<FaFilePdf className="w-4 h-4" />}
           />

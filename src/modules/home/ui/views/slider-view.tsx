@@ -5,6 +5,7 @@ import Carousel from "@/components/photo-carousel";
 import { Skeleton } from "@/components/ui/skeleton";
 import { config } from "@/config";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/utils";
 
 export const SliderView = () => {
   const projects = config.projects;
@@ -28,7 +29,7 @@ export const SliderView = () => {
 
         return (
           <div key={project.id} className="flex-[0_0_100%] h-full relative group">
-            <Image
+            <ImagegetAssetPath(project.image)
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}${project.image}`}
               alt={project.title}
               fill

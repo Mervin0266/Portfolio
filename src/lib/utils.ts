@@ -6,6 +6,20 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+export function getAssetPath(path: string) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "/Portfolio";
+  if (!path) return "";
+  if (path.startsWith("http") || path.startsWith("data:")) return path;
+  
+  // Clean up path to ensure it starts with /
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  
+  // Avoid double prefixing
+  if (cleanPath.startsWith(basePath)) return cleanPath;
+  
+  return `${basePath}${cleanPath}`;
+}
+
 /**
  * Format GPS coordinates to human-readable string
  * @param lat Latitude in decimal degrees
