@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Link from "next/link";
+// import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import {
   PiArrowUpRight,
@@ -31,7 +31,7 @@ const ContactCard = ({ title, href, className, icon }: Props) => {
   const defaultIcon = icon || iconMap[title] || <PiArrowUpRight size={18} />;
 
   return (
-    <Link
+    <a
       href={href || " "}
       target="_blank"
       className={cn(
@@ -54,7 +54,7 @@ const ContactCard = ({ title, href, className, icon }: Props) => {
           </span>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 
