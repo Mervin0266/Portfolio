@@ -4,9 +4,6 @@ import "./globals.css";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/theme-provider";
-// Vercel Analytics
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
 
 import { Readex_Pro } from "next/font/google";
 
@@ -36,8 +33,6 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </NuqsAdapter>
-        <SpeedInsights />
-        <Analytics />
       </body>
     </html>
   );
